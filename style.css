@@ -1,0 +1,250 @@
+*body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+                    /* section for index */
+
+
+
+                                /* section for index */
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+}
+h1 {
+    margin-left: 10px;
+    color: rgb(82, 82, 223);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero_section {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}                    
+-----------------------------------index ends here ---------------------------------------------------------
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 100px; 
+    height: 100px; 
+    background-color: lightblue;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt_span {
+    font-size: 24px; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0px auto;
+  }
+  
+  .box {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid violet;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .box:hover {
+    background-color: violet;
+    color: white;
+  }
+  
+  .info_box {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid violet;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .msg {
+    text-align: center;
+  }
+ 
+
+
+
+
+/* section for game.html */
+.game {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.game h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+.game input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.game button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.game button:hover {
+    background-color: #45a049;
+}
+
+
+.game #win_loss {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.game p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+#input_dice {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 200px;
+}
+
+
+#input_dice::placeholder {
+    color: #999;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+span {
+    color: blue;
+}
+
+
+}
+
+.firework {
+    position: relative;
+}
+
+.firework:before {
+    content: '🎉';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    animation: firework 4s ease forwards;
+}
+
+@keyframes firework {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) rotate(360deg);
+        opacity: 0;
+    }
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .flashing {
+    animation: flash 0.5s infinite;
+  }
